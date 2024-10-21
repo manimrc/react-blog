@@ -1,0 +1,22 @@
+.banner {
+  position: relative;
+  width: 100%; /* Full width */
+  margin: 20px 0; /* Space around the banner */
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.banner-heading {
+  position: absolute; /* Position heading on top of the image */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for the centered position */
+  color: white; /* Text color */
+  font-size: 2rem; /* Font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+  text-align: center; /* Center the text */
+}

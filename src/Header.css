@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Padding around header */
+  background-color: #f2d8d8; /* Background color */
+  color: white; /* Text color */
+  position: sticky; /* Keep it fixed at the top */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Make sure it appears above other content */
+  transition: top 0.3s; /* Smooth transition */
+}
+
+.header.hidden {
+  top: -100px; /* Hide the header */
+}
+
+.header.visible {
+  top: 0; /* Show the header */
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center; /* Center icons and buttons vertically */
+}
+
+.home-button {
+  padding: 5px 10px;
+  /* Space between icons and subscribe button */
+  background-color: #fa9189; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  margin-right: 20px; /* Space between home button and icons */
+  text-decoration: none;
+}
+
+.social-icon {
+  color: #545b77;
+  font-size: 1.5rem; /* Icon size */
+  margin: 0 10px; /* Space between icons */
+}
+
+.subscribe-button {
+  padding: 5px 10px;
+  margin-left: 20px; /* Space between icons and subscribe button */
+  background-color: #fa9189; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.subscribe-button:hover {
+  background-color: #545b77; /* Darker on hover */
+}
+.home-button:hover {
+  background-color: #545b77; /* Darker on hover */
+}
