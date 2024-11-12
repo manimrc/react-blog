@@ -1,8 +1,9 @@
 .banner {
   position: relative;
   width: 100%; /* Full width */
-  margin: 20px 0; /* Space around the banner */
+  margin: 1px 0; /* Space around the banner */
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .banner-image {
@@ -19,4 +20,21 @@
   font-size: 2rem; /* Font size */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
   text-align: center; /* Center the text */
+  padding: 0 10px; /* Add some padding to prevent text from touching edges */
+  max-width: 90%; /* Prevent text from overflowing */
+  word-wrap: break-word; /* Break long words if necessary */
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .banner-heading {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+    padding: 0 5px; /* Reduce padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-heading {
+    font-size: 1.2rem; /* Further reduce font size for very small screens */
+  }
 }

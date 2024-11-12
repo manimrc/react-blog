@@ -45,6 +45,7 @@
 
 .subscribe-button {
   padding: 5px 10px;
+  /* margin-right: 10px; */
   margin-left: 20px; /* Space between icons and subscribe button */
   background-color: #fa9189; /* Button color */
   color: white; /* Button text color */
@@ -58,4 +59,45 @@
 }
 .home-button:hover {
   background-color: #545b77; /* Darker on hover */
+}
+/* Subscribe button */
+.subscribe-button {
+  padding: 5px 10px;
+  margin-left: 20px; /* Space between icons and subscribe button */
+  background-color: #fa9189; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 1rem; /* Default font size */
+}
+
+.subscribe-button:hover {
+  background-color: #545b77; /* Darker on hover */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  /* Adjust subscribe button for mobile */
+  .subscribe-button {
+    padding: 5px; /* Smaller padding */
+    font-size: 0.8rem; /* Smaller text size */
+    margin-left: 0; /* Remove margin on mobile */
+  }
+
+  /* Replace subscribe text with icon */
+  .subscribe-button::before {
+    /* content: '\f0e0'; Unicode for mail icon (Font Awesome) */
+    font-family: 'Font Awesome 5 Free'; /* Font Awesome */
+    font-weight: 900; /* Bold icon */
+    margin-right: 5px;
+  }
+
+  .subscribe-button {
+    text-align: center;
+  }
+
+  .subscribe-button span {
+    display: none; /* Hide text on mobile */
+  }
 }

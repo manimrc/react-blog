@@ -6,7 +6,7 @@ function Header() {
   const [isVisible, setIsVisible] = useState(true);
 
   const handleScroll = () => {
-    if (window.scrollY > 50) { // Adjust this value as needed
+    if (window.scrollY >150) { // Adjust this value as needed
       setIsVisible(false);
     } else {
       setIsVisible(true);
@@ -46,7 +46,9 @@ function Header() {
           <FaInstagram className="social-icon" />
         </a>
         <button className="subscribe-button" onClick={handleSubscribe}>
-          Subscribe
+        <i class="fas fa-envelope"></i><span> Subscribe</span>
+
+          
         </button>
       </div>
     </header>

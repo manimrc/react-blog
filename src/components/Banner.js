@@ -1,15 +1,17 @@
 import React from 'react';
 import '../Banner.css'; // Use this path if Banner.css is in the src folder
+import hamImage from '../assets/ham.gif'; // Importing the image
+
 
 function Banner() {
   return (
     <div className="banner">
       <img 
-        src="https://via.placeholder.com/800x200" 
+        src={hamImage} 
         alt="Banner"
         className="banner-image"
       />
-      <h1 className="banner-heading">Welcome to Our Blog</h1>
+      <h1 className="banner-heading">Test Test Test, built in react, little bit chatgpt for that, find source code at ...  </h1>
     </div>
   );
 }

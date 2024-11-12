@@ -5,9 +5,15 @@ import BlogDetail from './components/BlogDetail';
 import Header from './components/Header'; // Import Header
 import Banner from './components/Banner'; // Import Banner
 import './App.css';
+import  { useEffect } from 'react';
+import ReactGA from 'react-ga4';
 
 function App() {
   const location = useLocation(); // Get the current location
+  useEffect(() => {
+    ReactGA.initialize('G-WSNWDRXH46'); // Replace with your actual ID
+    ReactGA.send("pageview"); // Track initial page load
+  }, []);
 
   return (
     <div className="App">
