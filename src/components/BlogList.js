@@ -6,12 +6,13 @@ const BlogList = () => {
   return (
     <div className="blog-list">
       {blogPosts.map((post) => (
-        <div key={post.id} className="blog-card">
-          <img src={post.image} alt={post.title} />
-          <h3>{post.title}</h3>
-          <p>{post.summary}</p>
-          <Link to={`/blog/${post.id}`}>Read More</Link>
-        </div>
+        <Link to={`/blog/${post.id}`} key={post.id} className="blog-card-link">
+          <div className="blog-card">
+            <img src={post.image} alt={post.title} />
+            <h3>{post.title}</h3>
+            <p>{post.summary}</p>
+          </div>
+        </Link>
       ))}
     </div>
   );
