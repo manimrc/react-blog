@@ -8,7 +8,8 @@
 
 .banner-image {
   width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
+  height: 300px; /* Maintain aspect ratio */
+  background-color: lightpink, 0.5;
 }
 
 .banner-heading {

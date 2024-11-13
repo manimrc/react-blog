@@ -9,7 +9,7 @@ export const blogPosts = [
     {
       id: 2,
       title: "Second Blog Post",
-      image: require("./assets/white_flower.jpg"),
+      image: require("./assets/Fire.gif"),
       summary: " content is not updated or dynamic, subscribe doesn't do anything, socials not working, everything else is perfectly fine \u{1F601} ",
       content: "Notes will be updated soon, content is not updated or dynamic subscribe doesn't do anything socials not working everything else is perfectly fine \u{1F601} "
     },
@@ -17,28 +17,28 @@ export const blogPosts = [
     {
       id: 3,
       title: "Third Blog Post",
-      image: "../data/white_flower.jpg",
+      image: require("./assets/silver.png"),
       summary: "This is a short summary of the third blog post.",
       content: "This is the full content of the third blog post."
     },
     {
       id: 4,
       title: "First Blog Post",
-      image: "../data/white_flower.jpg",
+      image: require("./assets/pastel2.jpeg"),
       summary: "This is a short summary of the first blog post.",
       content: "This is the full content of the first blog post."
     },
     {
       id: 5,
       title: "Second Blog Post",
-      image: "../data/white_flower.jpg",
+      image: require("./assets/pastel2.jpeg"),
       summary: "This is a short summary of the second blog post.",
       content: "This is the full content of the second blog post."
     },
     {
       id: 6,
       title: "Third Blog Post",
-      image: "../data/white_flower.jpg",
+      image: require("./assets/pastel2.jpeg"),
       summary: "This is a short summary of the third blog post.",
       content: "This is the full content of the third blog post."
     }
